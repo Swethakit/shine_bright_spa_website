@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book an Appointment - Velvet Touch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <img src="img/logo.jpg" alt="Shine Bright Logo" />
+      <span class="logo-text">Shine Bright</span>
+    </div>
+    <ul>
+      <li><a href="login.html">Log Out</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+  </nav>
+
+  <section class="appointment-section">
+    <div class="image-side"></div>
+
+    <div class="form-side">
+      <div class="appointment-box">
+        <h2>Book Your Appointment</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number" required />
+
+          <label for="time">Appointment Time</label>
+          <input type="datetime-local" id="time" name="time" required />
+
+          <label for="service">Select Service</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Choose a service</option>
+            <option value="hair">Hair</option>
+            <option value="skin">Skin</option>
+            <option value="makeup">Makeup</option>
+            <option value="nails">Nails</option>
+          </select>
+
+          <button type="submit">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
